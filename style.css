@@ -8,7 +8,8 @@ font-family: 'Mitr', sans-serif;*/
 	padding: 0;
 }
 .main {
-	background-image: linear-gradient(to top, rgba(28, 28, 28, 0.5), #fff );
+	/*background-image: linear-gradient(to top, rgba(28, 28, 28, 0.5), #fff );*/
+	background-color: #000;
 	display: flex;
 	justify-content: space-between;
 }
@@ -30,22 +31,21 @@ font-family: 'Mitr', sans-serif;*/
 	text-align: right;
 }
 .name {
-	background: -webkit-linear-gradient(#4876FF, #8B008B);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: #FFFAFA;
 	font-family: 'Mitr', sans-serif;
-	font-size: 30px;
+	font-size: 50px;
 	letter-spacing: 2px;
+	line-height: 40px;
 	margin-bottom: 5px;
 }
 .description {
-	color: #191970;
+	color: #8B008B;
 	font-family: 'Caladea', serif;
 	font-size: 20px;
 	letter-spacing: 1px;
 }
 .email-telephone a {
-	color: #191970;
+	color: #4876FF;
 	font-family: 'Caladea', serif;
 	font-size: 15px;
 	letter-spacing: 1px;
@@ -58,6 +58,10 @@ font-family: 'Mitr', sans-serif;*/
 .images {
 	display: flex;
 	justify-content: flex-end;
+	margin-top: 10px;
+}
+.images img {
+	background-color: #FFD700;
 }
 .header {
 	align-self: center;
@@ -68,9 +72,7 @@ font-family: 'Mitr', sans-serif;*/
 	background-color: transparent;
 	border: 0;
 	border-radius: 10px;
-	background: -webkit-linear-gradient(#4876FF, #8B008B);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: #8B008B;
 	cursor: pointer;
 	display: inline-block;
 	font-family: 'Mitr', sans-serif;
@@ -84,22 +86,22 @@ font-family: 'Mitr', sans-serif;*/
 	text-transform: lowercase;
 }
 .header-menu input:hover {
-    background: -webkit-linear-gradient(#191970, #fff);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: #4876FF;
 }
 .content-container {
-	width: 70%;
+	width: 85%;
 	height: 60vh;
 	max-height: 60vh;
 	margin: 10px auto;
 	border-radius: 20px;
 }
 .content {
-	color: #191970;
-	font-size: 15px;
-	line-height: 20px;
+	color: #FFFAFA;
+	font-size: 20px;
+	line-height: 25px;
 	letter-spacing: 1px;
 	padding: 25%;
-	text-align: center;
+	text-align: right;
 }
+
+
