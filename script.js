@@ -4,16 +4,13 @@ const experience = document.getElementById('experience');
 const education = document.getElementById('education');
 const portfolio = document.getElementById('portfolio');
 const content = document.getElementById('content');
-const contentTitle = document.getElementById('content-title');
-const contentSubtitle = document.getElementById('content-subtitle');
-const contentContent = document.getElementById('content-content');
 
 aboutme.addEventListener('click', () => {
 	content.style.padding = '22%';
 	content.style.textAlign = 'right';
 	content.style.fontSize = '20px';
 	content.style.color = '#FFFAFA';
-	content.innerHTML = 'Enthusiastic and talented <span style="color: #FFD700; font-size: 30px">Software Developer</span>, eager to learn and be part of something special. I love challenges, not afraid of anything at all. I consider myself a team player, open to give and receive feedbacks, improve with it, and help others to improve as well.';
+	content.innerHTML = 'Enthusiastic and talented Software Developer, eager to learn and be part of something special. I love challenges, not afraid of anything at all. I consider myself a team player, open to give and receive feedbacks, improve with it, and help others to improve as well.';
 })
 skills.addEventListener('click', () => {
 	content.style.color = '#FFFAFA';
@@ -32,7 +29,7 @@ experience.addEventListener('click', () => {
 })
 education.addEventListener('click', () => {
 	content.style.color = '#FFFAFA';
-	content.style.padding = '15%';
+	content.style.padding = '12%';
 	content.style.textAlign = 'right';
 	content.style.fontSize = '15px';
 	content.innerHTML = '<h2 style="color: #FFD700">Instruct - Campinas/SP</h2>Instruct Academy Program<br/>September - November/2019<br/>In this program, I received training aimed at people entering the IT area, including the "Welcome to the Django" course, where Python knowledge is applied to web development through the use of the Django framework, integration course and continuous delivery, infrastructure course like code, code versioning and use of containers / docker.<br/>';
@@ -45,4 +42,63 @@ portfolio.addEventListener('click', () => {
 	content.style.fontSize = '15px';
 	content.innerHTML = 'HTML, CSS, Javascript<br/><h2><a href="#" style="text-decoration:none; color:#FFD700";>Photographer Website</a></h2><br/>ReactJS<br/><h2><a href="https://paulafalves.github.io/todo_list/" style="text-decoration:none; color:#FFD700">To Do List</a></h2>';
 })
-// document.querySelector(".main").reset();
+
+const htmlAnimation01 = document.querySelector('.html-animation-01');
+const string01 = htmlAnimation01.textContent;
+const splitString01 = string01.split('');
+htmlAnimation01.textContent = '';
+
+
+for (i = 0; i < splitString01.length; i++){
+	htmlAnimation01.innerHTML += "<span>" + splitString01[i] + "</span>";
+}
+
+let char = 0;
+let timer = setInterval(onTick, 50);
+
+function onTick() {
+	const span = htmlAnimation01.querySelectorAll('span')[char];
+	span.classList.add('fade');
+	char++;
+	if (char === splitString01.length) {
+		complete();
+		return;
+	}
+}
+
+function complete() {
+	clearInterval(timer);
+	timer = null;
+}
+
+// const htmlAnimation02 = document.querySelector('.html-animation-02');
+// const string02 = htmlAnimation02.textContent;
+// const splitString02 = string02.split('');
+// htmlAnimation02.textContent = '';
+
+// for (i = 0; i < splitString02.length; i++){
+// 	htmlAnimation02.innerHTML += "<span>" + splitString02[i] + "</span>";
+// }
+
+
+// let timer2 = setInterval(onTick2, 50);
+// function onTick2() {
+// 	const span2 = htmlAnimation02.querySelectorAll('span')[char];
+// 	span2.classList.add('fade');
+// 	char++;
+// 	if (char === splitString02.length) {
+// 		complete();
+// 		return;
+// 	}
+// }
+
+
+
+
+
+
+
+
+
+
+
